@@ -40,10 +40,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 EditText editText;
                 boolean formIsValid = true;
+                ArrayList<String> userInputs = new ArrayList<>();
                 for (int i = 0; i < mListView.getCount(); i++) {
                     editText = (EditText) getViewByPosition(i, mListView).findViewById(R.id.user_input);
                     if (editText.length() == 0) {
                         formIsValid = false;
+                    } else {
+                        userInputs.add(editText.getText().toString());
                     }
                 }
 
