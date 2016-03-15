@@ -11,12 +11,15 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
+    private static final int NUMBER_OF_STORIES = 3;
+
     private Button mSubmitButton;
     private ListView mListView;
 
@@ -25,8 +28,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        int randomNumber = 1 + (int)(Math.random() * ((NUMBER_OF_STORIES - 1) + 1));
         Resources res = getResources();
-        String[] inputs = res.getStringArray(R.array.story_inputs_1);
+
+        int arrayIdentifier = res.getIdentifier(("story_inputs_" + Integer.toString(randomNumber)), "array", getPackageName());
+        String[] inputs = res.getStringArray(arrayIdentifier);
         ArrayList<String> inputArrayList = new ArrayList<>(Arrays.asList(inputs));
 
         mListView = (ListView) findViewById(R.id.listView);
@@ -51,7 +57,10 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (formIsValid) {
-                    Toast.makeText(getApplicationContext(), "Successful form submission!", Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(getApplicationContext(), "Successful form submission!", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, ResultsActivity.class);
+                    intent.putExtra("userInputs", userInputs);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(), "Please fill out all fields", Toast.LENGTH_SHORT).show();
                 }

@@ -25,7 +25,6 @@ public class UserInputAdapter extends ArrayAdapter<String> {
         // Lookup view for data population
         EditText etInput = (EditText) convertView.findViewById(R.id.user_input);
         // Populate the data into the template view using the data object
-
         etInput.setHint(input);
         // Return the completed view to render on screen
         return convertView;

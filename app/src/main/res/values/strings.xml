@@ -1,15 +1,65 @@
 <resources>
     <string name="app_name">MadLibs</string>
-    <!--<string name="story_1">-->
-        <!--Ye can always pretend to be a bloodthirsty %s threatening everyone by waiving yer %s sword in-->
-        <!--the air, but until ye learn to %s like a pirate, ye'll never be %s accepted as an authentic-->
-        <!--pirate.-->
-    <!--</string>-->
+    <string name="story_1" formatted="false">
+        Ye can always pretend to be a bloodthirsty %s threatening everyone by waiving yer %s sword in
+        the air, but until ye learn to %s like a pirate, ye will never be %s accepted as an authentic
+        pirate.
+    </string>
 
     <string-array name="story_inputs_1">
         <item>noun</item>
         <item>adjective</item>
         <item>verb</item>
         <item>adverb</item>
+    </string-array>
+
+    <string name="story_2" formatted="false">Giraffes have aroused the curiosity of %s since
+        earliest times. The giraffe is the tallest of all living %s, but scientists are unable to
+        explain how it got its long %s. The giraffe\'s tremendous height, which might reach %s %s,
+        comes mostly from its legs and %s. If a giraffe wants to take a drink of %s from the
+        ground, it has to spread its %s far apart in order to reach down and lap up the water
+        with its huge %s. The giraffe has %s ears that are sensitive to the faintest %s, and it
+        has a/an %s sense of smell and sight. When attacked, a giraffe and put up a/an %s fight
+        by %s out with its hind legs and using its head like a sledge %s. Finally, a giraffe and
+        gallop at more than thirty %s an hour when pursued and can outrun the fastest %s.
+    </string>
+
+    <string-array name="story_inputs_2">
+        <item>first plural noun</item>
+        <item>second plural noun</item>
+        <item>body part</item>
+        <item>number</item>
+        <item>third plural noun</item>
+        <item>body part</item>
+        <item>type of liquid</item>
+        <item>body part plural</item>
+        <item>body part</item>
+        <item>adjective</item>
+        <item>fourth plural noun</item>
+        <item>adjective</item>
+        <item>adjective</item>
+        <item>verb ending in -ing</item>
+        <item>noun</item>
+        <item>fifth plural noun</item>
+        <item>noun</item>
+    </string-array>
+
+    <string name="story_3" formatted="false">Last week, our class went on the %s field trip ever
+        to the petting zoo. The petting zoo has all kinds of %s - from %s to %s and everything in
+        between. For twenty-five cents, you could buy a handful of %s to feed to the %s. They
+        would %s every time they wanted a treat. I laughed so hard that I began to %s. That sure
+        was the %s petting zoo that I\'ve ever been to!
+    </string>
+
+    <string-array name="story_inputs_3">
+        <item>first adjective</item>
+        <item>first plural noun</item>
+        <item>second plural noun</item>
+        <item>third plural noun</item>
+        <item>type of food</item>
+        <item>noun</item>
+        <item>first verb</item>
+        <item>second verb</item>
+        <item>second adjective</item>
     </string-array>
 </resources>
