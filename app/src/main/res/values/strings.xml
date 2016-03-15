@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MadLibs</string>
+    <!--<string name="story_1">-->
+        <!--Ye can always pretend to be a bloodthirsty %s threatening everyone by waiving yer %s sword in-->
+        <!--the air, but until ye learn to %s like a pirate, ye'll never be %s accepted as an authentic-->
+        <!--pirate.-->
+    <!--</string>-->
+
+    <string-array name="story_inputs_1">
+        <item>noun</item>
+        <item>adjective</item>
+        <item>verb</item>
+        <item>adverb</item>
+    </string-array>
+</resources>
