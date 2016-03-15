@@ -28,7 +28,12 @@ public class ResultsActivity extends AppCompatActivity {
         String[] inputArray = new String[userInputs.size()];
         inputArray = userInputs.toArray(inputArray);
 
-        thisStory = resources.getString(R.string.story_1);
+        int storyNumber = intent.getIntExtra("storyNumber", 3);
+        Resources res = getResources();
+        int storyIdentifier = res.getIdentifier(("story_" + Integer.toString(storyNumber)),
+                "string", getPackageName());
+
+        thisStory = resources.getString(storyIdentifier);
 
         String formattedStory = String.format(thisStory, (Object[])inputArray);
 

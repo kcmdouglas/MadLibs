@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int randomNumber = 1 + (int)(Math.random() * ((NUMBER_OF_STORIES - 1) + 1));
+        final int randomNumber = 1 + (int)(Math.random() * ((NUMBER_OF_STORIES - 1) + 1));
         Resources res = getResources();
 
         int arrayIdentifier = res.getIdentifier(("story_inputs_" + Integer.toString(randomNumber)), "array", getPackageName());
@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
                    // Toast.makeText(getApplicationContext(), "Successful form submission!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, ResultsActivity.class);
                     intent.putExtra("userInputs", userInputs);
+                    intent.putExtra("storyNumber", randomNumber);
                     startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(), "Please fill out all fields", Toast.LENGTH_SHORT).show();
