@@ -9,9 +9,6 @@ import android.widget.EditText;
 
 import java.util.ArrayList;
 
-/**
- * Created by Guest on 3/15/16.
- */
 public class UserInputAdapter extends ArrayAdapter<String> {
     public UserInputAdapter(Context context, ArrayList<String> inputs) {
         super(context, 0, inputs);

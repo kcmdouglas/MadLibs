@@ -11,4 +11,5 @@
     android:minHeight="?android:attr/listPreferredItemHeightSmall"
     android:hint="InputType"
     android:paddingRight="?android:attr/listPreferredItemPaddingRight"
-    android:paddingLeft="?android:attr/listPreferredItemPaddingLeft" />
+    android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+    android:background="@android:color/transparent"/>
