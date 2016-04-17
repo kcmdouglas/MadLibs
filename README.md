@@ -1,7 +1,7 @@
 # MadLibs
 An in-cass excercise creating a MadLib game.
 
-### March 18th, 2016, Kassidy Malone-Douglas 
+### March 15th, 2016, Kassidy Malone-Douglas 
 
 ## Description
 
